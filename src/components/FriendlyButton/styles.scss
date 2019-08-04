@@ -1,0 +1,23 @@
+.wrapper {
+	padding: 1em 1.62em;
+	border: 1px solid var(--color__bg);
+	background-color: var(--color__bg);
+	transition: background-color .15s;
+	--color__bg: red;
+	--color__fg: white;
+	// $monkey: white;
+	
+	&:hover {
+		background-color: transparent;
+		cursor: pointer;
+		
+		.label {
+			color: var(--color__bg);
+		}
+	}
+}
+
+	.label {
+		color: var(--color__fg);
+		transition: color .15s;
+	}
